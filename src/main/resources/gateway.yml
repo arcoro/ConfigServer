@@ -1,0 +1,12 @@
+server.port: 9090
+
+#para el registro
+eureka:
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#ZUUL
+zuul.prefix: /api
+#zuul.routes.SingerService=/servidor01/*
